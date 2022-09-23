@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<!-- é obrigatório incluir isso para dizer para o django ler o que está no diretório "static"
+	lembrar que este diretório foi configurado seu path no arquivo setting.py -->
+{% load static %}
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTL-8">
+	<title>Flix Web</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/principal.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
+</head>
+
+<body>
+	{% include "../menu.html" %}
+	<main>
+		<h1 class="titulo">Flix Project</h1>
+	</main>
+</body>
+</html>
+
+
+
